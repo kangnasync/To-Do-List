@@ -173,7 +173,7 @@ clearCompleted.addEventListener("click", () => {
 
 });
 
-themeBtn.addEventListener("click", () => {
+/*themeBtn.addEventListener("click", () => {
 
     document.body.classList.toggle("dark");
 
@@ -188,5 +188,14 @@ const savedTheme = localStorage.getItem("theme");
 
 if (savedTheme === "dark") {
     document.body.classList.add("dark");
-}
+}*/
+const themeToggle = document.getElementById("themeBtn");
+themeToggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+    if (document.body.classList.contains("dark")) {
+        themeToggle.textContent = "☀️";
+    } else {
+        themeToggle.textContent = "🌙";
+    }
+});
 renderTasks();

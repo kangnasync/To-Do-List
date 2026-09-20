@@ -1,3 +1,20 @@
+:root {
+    --bg-color: #f5f5f7;
+    --text-color: #111111;
+    --converter-bg: #ffffff;
+    --display-color: #111111;
+    --button-bg: #e5e5e7;
+    --button-text: #000000;
+}
+
+body.dark {
+    --bg-color: #000000;
+    --text-color: #ffffff;
+    --converter-bg: #1c1c1e2d;
+    --display-color: #ffffff;
+    --button-bg: #333333;
+    --button-text: #ffffff;
+}
 *{
     margin:0;
     padding:0;
@@ -242,4 +259,98 @@ transform:scale(1.2);
         flex-direction:column;
         align-items:flex-start;
     }
+}
+#themeBtn {
+    position: fixed !important;
+    top: 20px !important;
+    right: 20px !important;
+
+    width: 55px !important;
+    height: 55px !important;
+
+    left:auto;
+    bottom:auto;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    border: none !important;
+    border-radius: 50% !important;
+
+    background-color: var(--button-bg) !important;
+    color: var(--button-text) !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    font-size: 24px !important;
+
+    cursor: pointer;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+
+    z-index: 99999;
+
+    transition: 
+        background-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.2s ease;
+}
+
+#themeBtn:hover {
+    transform: scale(1.08);
+}
+
+#themeBtn:active {
+    transform: scale(0.95);
+}
+
+.feedback-section {
+    width: 100%;
+    text-align: center;
+    margin-top: 25px;
+    padding-bottom: 30px;
+    color: var(--display-color);
+}
+
+.feedback-section h3 {
+    margin: 0 0 6px;
+    font-size: 20px;
+    color: var(--display-color);
+}
+
+.feedback-section p {
+    margin: 0 0 15px;
+    font-size: 16px;
+    color: var(--display-color);
+    opacity: 0.65;
+}
+
+.feedback-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 12px 22px;
+    border-radius: 14px;
+
+    background: var(--button-bg);
+    color: var(--button-text);
+
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+
+    transition: all 0.25s ease;
+}
+
+.feedback-button:hover {
+    transform: translateY(-2px);
+}
+
+.feedback-button:active {
+    transform: scale(0.97);
 }

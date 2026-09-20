@@ -328,23 +328,23 @@ transform:scale(1.2);
 }
 
 .feedback-button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+    display: inline-flex !important; 
+    align-items: center !important;
+    justify-content: center !important;
 
-    padding: 12px 22px;
-    border-radius: 14px;
+    padding: 12px 22px !important;
+    border-radius: 14px !important;
 
-    background: var(--button-bg);
-    color: var(--button-text);
+    background: var(--button-bg) !important;
+    color: var(--button-text) !important;
 
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 600;
+    text-decoration: none !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
 
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
-    cursor:pointer;
-    transition: all 0.25s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12) !important;
+    cursor:pointer !important;
+    transition: all 0.25s ease !important;
 }
 
 .feedback-button:hover {

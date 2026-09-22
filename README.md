@@ -53,8 +53,7 @@ Alternatively, use the Live Server extension in Visual Studio Code for the best 
 
 Screenshots
 [To-Do List screenshot](screenshot.png)
-[To-Do List screenshot](screenshot1.png)
-[To-Do List screenshot](screenshot2.png)
+[To-Do List screenshot](Screenshot1.png)
 
 Learning Outcomes
 
